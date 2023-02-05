@@ -17,3 +17,5 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 sed -i '$a src-git openwrt_kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+#修改内核版
+sed -i ' s/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.15/g ' target/linux/x86/Makefile
