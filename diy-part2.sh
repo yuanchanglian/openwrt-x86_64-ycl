@@ -23,3 +23,4 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Ma
 #修改内核版本
 sed -i 's/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/' target/linux/x86/Makefile
 git clone https://github.com/kongfl888/luci-app-adguardhome package/lean/luci-app-adguardhome
+git clone https://github.com/kenzok78/luci-app-fileassistant package/lean/luci-app-fileassistant
