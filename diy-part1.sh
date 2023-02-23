@@ -16,6 +16,8 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i '$a src-git openwrt_kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+#sed -i '$a src-git openwrt_kiddin9 https://github.com/kiddin9/openwrt-packages.git' feeds.conf.default
+sed -i '$a src-git OpenClash https://github.com/vernesong/OpenClash' feeds.conf.default
+sed -i '$a src-git istore https://github.com/linkease/istore' feeds.conf.default
 #修改内核版
 sed -i ' s/KERNEL_PATCHVER:=5.15/KERNEL_PATCHVER:=6.1/ ' target/linux/x86/Makefile
