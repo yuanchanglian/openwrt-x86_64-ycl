@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.2.66/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.66/g' package/base-files/files/bin/config_generate
 # 删除自定义源默认的 argon 主题
 rm -rf package/lean/luci-theme-argon
 # 部分第三方源自带 argon 主题，上面命令删除不掉的请运行下面命令
